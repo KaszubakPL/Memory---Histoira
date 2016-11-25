@@ -153,11 +153,19 @@ set_img(40); //ustawienie src na alt losowych obrazkow - 40
   	$("img").bind("click", function() {
       if(action==3)
           {
+            //zerowanie obrazkow
+            document.getElementById(identyfikator[1]).src = "test.jpg";
+            document.getElementById(identyfikator[2]).src = "test.jpg";
+            document.getElementById(identyfikator[1]).alt = alt[10];
+            document.getElementById(identyfikator[2]).alt = alt[11];
+            //zerowanie
             action=1;
             source[1]=0;
-            identyfikator[1]=0;
+            //identyfikator[1]=0;
             source[2]=0;
-            identyfikator[2]=0;
+            //identyfikator[2]=0;
+            alt[1]=0;
+            alt[2]=0;
           }
                 if ($(this).attr("id") != null) {
             			identyfikator[action] = $(this).attr("id");
@@ -168,71 +176,39 @@ set_img(40); //ustawienie src na alt losowych obrazkow - 40
                 if ($(this).attr("alt") != null) {
             			alt[action] = $(this).attr("alt");
             		}
+                    //Odkrywanie zdjecia
+                    //alert(action + " " + source[action]  + " " +  alt[action] + " " + identyfikator[action]); //sprawdzenie
+                    //pobieranie wartosci i podmiana zdjecia
+                      //zmienne pomocniczej
+                      source[action + 9] = ""; // od 10 zaczyna sie zmienna pomocnicza w tej samej tablicy
+                      alt[action + 9] = "";
+                      //identyfikator[action + 9] = "";
 
+                      source[action+9] = source[action]; //przypisanie do zmiennych pomocniczych wartosci
+                      alt[action+9] = alt[action];
+                      identyfikator[action+9] = identyfikator[action];
 
-      //podmiana alt i src
+                      //zamiana obrazkow
+                      document.getElementById(identyfikator[action]).src = alt[action+9];
 
-      //do podmianki tmpy
-      var tmp1 = source[1];
-      var tmp2 = alt[1];
-      var tmp3 = source[2];
-      var tmp4 = alt[2];
-							document.getElementById(identyfikator[1]).src = tmp2;
-		          document.getElementById(identyfikator[1]).alt = tmp1;
-          if(action==2)
-            {
-              document.getElementById(identyfikator[2]).src = tmp4;
-              document.getElementById(identyfikator[2]).alt = tmp3;
-            }
+                      //sprawdzenie identyfikatorow do liczenia punktow
+                      if((identyfikator[1]!=identyfikator[2]) && (alt[1]==alt[2]))
+                        {
+                          kroki--;
+                          document.getElementById('punkty').innerHTML = kroki;
+                          document.getElementById(identyfikator[1]).style = "visibility: hidden; transition-duration: 500ms;"; // znikanie jak sie poprawne klikanie
+                          document.getElementById(identyfikator[2]).style = "visibility: hidden; transition-duration: 500ms;";
+                        }
 
-
-
-
-  		//alert(identyfikator[action] + " " + source[action] + " " + action);
-        // ((identyfikator[1]!=identyfikator[2]) && (alt[1] != "test.jpg")) && alt[1] == alt[2]
-        // if(((alt[1] == alt[2]) && ((identyfikator[1]!=identyfikator[2]) ) && (alt[1] != "test.jpg")))
-				// if(((identyfikator[1]!=identyfikator[2]) && (alt[1] != "test.jpg")) && alt[1] == alt[2])
-        if(((identyfikator[1]!=identyfikator[2]) && (alt[1] != "test.jpg")) && alt[1] == alt[2])
-        {
-          kroki--;
-          //document.getElementById(identyfikator[1]).src = "test.jpg";
-          //document.getElementById(identyfikator[2]).src = "test.jpg";
-          document.getElementById(identyfikator[1]).style = "visibility: hidden; transition-duration: 500ms;"; // znikanie jak sie poprawne klikanie
-          document.getElementById(identyfikator[2]).style = "visibility: hidden; transition-duration: 500ms;";
-          document.getElementById('punkty').innerHTML = kroki;
-          //alert(kroki);
-        }else{
-					setTimeout(function(){
-									document.getElementById(identyfikator[1]).src = tmp1;
-									document.getElementById(identyfikator[1]).alt = tmp2;
-									document.getElementById(identyfikator[2]).src = tmp3;
-									document.getElementById(identyfikator[2]).alt = tmp4;
-
-						},1000);
-				}
-
-				/*else if(action==1 && (source[1] == source[2])){
-          alert("i dupa");
-        }*/
-
-        action+=1;
-        ruch+=1;
-        document.getElementById('ruchy').innerHTML = ruch;
-        /*if(action==3)
-          {
-            setTimeout(function(){
-                document.getElementById(identyfikator[1]).src = tmp1;
-                document.getElementById(identyfikator[1]).alt = tmp2;
-                document.getElementById(identyfikator[2]).src = tmp3;
-                document.getElementById(identyfikator[2]).alt = tmp4;
-              },500);
-          }*/
-
-					// wysiwtlanie informacji o losowym obrazku
-					if(kroki == 0)
-						{
-							document.getElementById('oknogry').innerHTML = "wygrana";
-						}
+                      ruch++;
+                      document.getElementById('ruchy').innerHTML = ruch;
+                      //CODE UP !
+                    action++; // inkrementacja akcji
+                    //END OF GAME
+                    if(kroki == 0)
+                      {
+                        document.getElementById('oknogry').innerHTML = "wygrana";
+                      }
   	});
   });
   //end jquery

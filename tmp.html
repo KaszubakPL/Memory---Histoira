@@ -1,0 +1,63 @@
+//podmiana alt i src
+
+//do podmianki tmpy
+var tmp1 = source[1];
+var tmp2 = alt[1];
+var tmp3 = source[2];
+var tmp4 = alt[2];
+        document.getElementById(identyfikator[1]).src = tmp2;
+        document.getElementById(identyfikator[1]).alt = tmp1;
+    if(action==2)
+      {
+        document.getElementById(identyfikator[2]).src = tmp4;
+        document.getElementById(identyfikator[2]).alt = tmp3;
+      }
+
+
+
+
+//alert(identyfikator[action] + " " + source[action] + " " + action);
+  // ((identyfikator[1]!=identyfikator[2]) && (alt[1] != "test.jpg")) && alt[1] == alt[2]
+  // if(((alt[1] == alt[2]) && ((identyfikator[1]!=identyfikator[2]) ) && (alt[1] != "test.jpg")))
+  // if(((identyfikator[1]!=identyfikator[2]) && (alt[1] != "test.jpg")) && alt[1] == alt[2])
+  if(((identyfikator[1]!=identyfikator[2]) && (alt[1] != "test.jpg")) && alt[1] == alt[2])
+  {
+    kroki--;
+    //document.getElementById(identyfikator[1]).src = "test.jpg";
+    //document.getElementById(identyfikator[2]).src = "test.jpg";
+    document.getElementById(identyfikator[1]).style = "visibility: hidden; transition-duration: 500ms;"; // znikanie jak sie poprawne klikanie
+    document.getElementById(identyfikator[2]).style = "visibility: hidden; transition-duration: 500ms;";
+    document.getElementById('punkty').innerHTML = kroki;
+    //alert(kroki);
+  }else{
+    setTimeout(function(){
+            document.getElementById(identyfikator[1]).src = tmp1;
+            document.getElementById(identyfikator[1]).alt = tmp2;
+            document.getElementById(identyfikator[2]).src = tmp3;
+            document.getElementById(identyfikator[2]).alt = tmp4;
+
+      },1000);
+  }
+
+  /*else if(action==1 && (source[1] == source[2])){
+    alert("i dupa");
+  }*/
+
+  action+=1;
+  ruch+=1;
+  document.getElementById('ruchy').innerHTML = ruch;
+  /*if(action==3)
+    {
+      setTimeout(function(){
+          document.getElementById(identyfikator[1]).src = tmp1;
+          document.getElementById(identyfikator[1]).alt = tmp2;
+          document.getElementById(identyfikator[2]).src = tmp3;
+          document.getElementById(identyfikator[2]).alt = tmp4;
+        },500);
+    }*/
+
+    // wysiwtlanie informacji o losowym obrazku
+    if(kroki == 0)
+      {
+        document.getElementById('oknogry').innerHTML = "wygrana";
+      }
