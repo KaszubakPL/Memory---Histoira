@@ -5,15 +5,7 @@
 <!-- <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script> -->
 <script src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-//prelaoder
 
-//$(window).load(function() { // Czekamy na zaĹ‚adowanie caĹ‚ej zawartoĹ›ci strony
-//	$("#preloader #image").fadeOut(); // Usuwamy grafikÄ™ Ĺ‚adowania
-//	$("#preloader").delay(350).fadeOut("slow"); // Usuwamy diva przysĹ‚aniajÄ…cego stronÄ™
-//})
-
-
-//end preloader
 var hours = 0;
 var min = 10;
 var sec=0;
@@ -87,9 +79,6 @@ function time() {
 </script>
 </head>
 <body>
-  <div id="preloader">
-	<div id="image"></div>
-</div>
   <div id="timer">CZAS</div>
   <div id="punkty">PUNKTY</div>
   <div id="ruchy">RUCHY</div>
@@ -147,6 +136,7 @@ set_img(40); //ustawienie src na alt losowych obrazkow - 40
   var action = 1;
   var kroki = 20;
   var ruch=0;
+
 
 
   $(document).ready(function() {
@@ -208,6 +198,12 @@ set_img(40); //ustawienie src na alt losowych obrazkow - 40
                     if(kroki == 0)
                       {
                         document.getElementById('oknogry').innerHTML = "wygrana";
+                        //wypisac w jakim czasie i ile pkt uzyskano
+                        //stop czasu
+                        //wyswietlenie losowego obrazka i opisu do niego
+                        //alert(l[5]); // tu wylosowany obrazek z sesji sie wyswietla. zrobic php z tymi obrazkami i opisami
+                        var loc = "learn.php?id="+l[5];
+                        location.href = loc;
                       }
   	});
   });
