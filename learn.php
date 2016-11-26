@@ -15,27 +15,27 @@ function opisy($id)
             {
               return "tu opis 3";
             }
-            if($id == "3")
+            if($id == "4")
               {
                 return "tu opis 3";
               }
-              if($id == "3")
+              if($id == "5")
                 {
                   return "tu opis 3";
                 }
-                if($id == "3")
+                if($id == "6")
                   {
                     return "tu opis 3";
                   }
-                  if($id == "3")
+                  if($id == "7")
                     {
                       return "tu opis 3";
                     }
-                    if($id == "3")
+                    if($id == "8")
                       {
                         return "tu opis 3";
                       }
-                      if($id == "3")
+                      if($id == "9")
                         {
                           return "tu opis 3";
                         }
@@ -123,6 +123,12 @@ function opisy($id)
                                                                   {
                                                                     return "tu opis 3";
                                                                   }
+                                                                  if($id == "undefined")
+                                                                    {
+                                                                      return "<h2>Młodzież żydowska w Oświęcimiu</h2><p>
+                                                                        Młodzież żydowska w Oświęcimiu przed wojną
+                                                                      </p>";
+                                                                    }
   }
 
  ?>
@@ -134,8 +140,13 @@ function opisy($id)
  <body>
  <div id="oknogry">
    <?php
-       echo '<img id="final_img" src="zdjecia/zdjecie ('.$id.').jpg" alt=""/>';
-       echo '<p>'.opisy($id).'</p>';
+   if($id == "undefined")
+    {
+      echo '<img id="final_img" src="zdjecia/undefined.jpg" alt=""/>';
+    }else{
+      echo '<img id="final_img" src="zdjecia/zdjecie ('.$id.').jpg" alt=""/>';
+    }
+       echo opisy($id);
     ?>
  </div>
 

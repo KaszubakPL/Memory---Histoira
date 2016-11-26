@@ -41,7 +41,25 @@ h1 span:hover {
   opacity: 0.9;
 }
 
-#oknogry img {
+#final_img {
+  height: 500px;
+  width: 500px;
+  margin: 25px;
+  float: left;
+}
+
+h2 {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 2em;
+}
+
+p {
+  text-indent: 10px;
+  font-size: 1.15em;
+}
+
+.gra img {
 height: 150px;
 width: 150px;
 margin: 3px;
@@ -55,10 +73,10 @@ user-select: none;
   transform: scale(1);
 }
 
-#oknogry img:hover {
+.gra img:hover {
   opacity: 0.90;
 }
 
-#oknogry img:active {
+.gra img:active {
   transform: scale(0.9);
 }

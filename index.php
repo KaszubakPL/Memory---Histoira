@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <!-- <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script> -->
 <script src="jquery-3.1.1.min.js"></script>
+
 <script type="text/javascript">
 
 var hours = 0;
@@ -83,7 +84,7 @@ function time() {
   <div id="punkty">PUNKTY</div>
   <div id="ruchy">RUCHY</div>
 
-<div id="oknogry">
+<div id="oknogry" class="gra">
 <?php
 for($i=1;$i<=40;$i++)
 {
