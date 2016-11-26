@@ -157,10 +157,10 @@ window.onload=function(){
 };
 
 var t_src = new Array(); // Tworzenie tablicy niewymiarowej
-create_table(28); //stworzenie tablic [20] ktore beda mialy sciezki do plikow
+create_table(38); //stworzenie tablic [20] ktore beda mialy sciezki do plikow
 //Losowanie
 var l = new Array(); // stworzenie tablicy pomocniczej do losowania
-losuj_bp(28); // losowanie 30 liczb
+losuj_bp(38); // losowanie 30 liczb
 view_img(40);//wyswietanie hoverow
 set_img(40); //ustawienie src na alt losowych obrazkow - 40
 
