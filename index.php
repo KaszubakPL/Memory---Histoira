@@ -4,8 +4,15 @@
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <!-- <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script> -->
 <script src="jquery-3.1.1.min.js"></script>
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 <script type="text/javascript">
+//PRELAODER do calej strony
+$(window).load(function() { // Czekamy na załadowanie całej zawartości strony
+				$("#preloader #image").delay(20000).fadeOut(); // Usuwamy grafikę ładowania
+				$("#preloader").delay(20000).fadeOut("slow"); // Usuwamy diva przysłaniającego stronę
+			})
+//end
+
 
 var hours = 0;
 var min = 10;
@@ -76,15 +83,37 @@ function time() {
             document.getElementById(i).src = "test.jpg";
           }
       }//view img
-
+//PRELAODER
+$(function () {
+$('img').hide();
+});
+var i = 0;
+var int=0;
+$(window).bind("load", function() {
+var int = setInterval("doThis(i)",500);
+});
+function doThis() {
+var images = $('img').length;
+if (i >= images) {
+clearInterval(int);
+}
+$('img:hidden').eq(0).fadeIn(500);
+i++;
+}
+//END PRELAODER
 </script>
 </head>
 <body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="image"></div>
+  </div>
+  <!-- /Preloader -->
   <div id="timer">CZAS</div>
   <div id="punkty">PUNKTY</div>
   <div id="ruchy">RUCHY</div>
 
-<div id="oknogry" class="gra">
+<div id="oknogry" class="image-holder">
 <?php
 for($i=1;$i<=40;$i++)
 {

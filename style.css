@@ -59,7 +59,7 @@ p {
   font-size: 1.15em;
 }
 
-.gra img {
+#oknogry img {
 height: 150px;
 width: 150px;
 margin: 3px;
@@ -73,10 +73,29 @@ user-select: none;
   transform: scale(1);
 }
 
-.gra img:hover {
+#oknogry img:hover {
   opacity: 0.90;
 }
 
-.gra img:active {
+#oknogry img:active {
   transform: scale(0.9);
+}
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.7);
+	z-index: 200;
+}
+#preloader #image {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url('preloader.gif') no-repeat center;
+	margin: -60px 0 0 -60px;
 }

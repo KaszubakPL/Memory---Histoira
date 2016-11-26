@@ -138,7 +138,7 @@ function opisy($id)
  <link rel="stylesheet" type="text/css" href="style.css"/>
  </head>
  <body>
- <div id="oknogry">
+ <div id="final">
    <?php
    if($id == "undefined")
     {
