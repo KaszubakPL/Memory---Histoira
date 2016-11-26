@@ -8,8 +8,8 @@
 <script type="text/javascript">
 //PRELAODER do calej strony
 $(window).load(function() { // Czekamy na załadowanie całej zawartości strony
-				$("#preloader #image").delay(20000).fadeOut(); // Usuwamy grafikę ładowania
-				$("#preloader").delay(20000).fadeOut("slow"); // Usuwamy diva przysłaniającego stronę
+				$("#preloader #image").delay(10000).fadeOut(); // Usuwamy grafikę ładowania
+				$("#preloader").delay(10000).fadeOut("slow"); // Usuwamy diva przysłaniającego stronę
 			})
 //end
 
@@ -90,14 +90,14 @@ $('img').hide();
 var i = 0;
 var int=0;
 $(window).bind("load", function() {
-var int = setInterval("doThis(i)",500);
+var int = setInterval("doThis(i)",250);
 });
 function doThis() {
 var images = $('img').length;
 if (i >= images) {
 clearInterval(int);
 }
-$('img:hidden').eq(0).fadeIn(500);
+$('img:hidden').eq(0).fadeIn(250);
 i++;
 }
 //END PRELAODER
@@ -106,12 +106,18 @@ i++;
 <body>
   <!-- Preloader -->
   <div id="preloader">
-    <div id="image"></div>
+    <div id="image" class="wyniki"></div>
   </div>
   <!-- /Preloader -->
-  <div id="timer">CZAS</div>
-  <div id="punkty">PUNKTY</div>
-  <div id="ruchy">RUCHY</div>
+  <div id="timerDiv" class="wyniki">Czas: <span id="timer">
+
+  </span></div>
+  <div id="punktyDiv" class="wyniki">Punkty: <span id="punkty">
+
+  </span></div>
+  <div id="ruchyDiv" class="wyniki">Ruchy: <span id="ruchy">
+
+  </span></div>
 
 <div id="oknogry" class="image-holder">
 <?php
