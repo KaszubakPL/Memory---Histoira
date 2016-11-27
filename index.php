@@ -120,11 +120,42 @@ i++;
   </span></div>
 
 <div id="oknogry" class="image-holder">
-<?php
-for($i=1;$i<=40;$i++)
+<?php // wyswietlanie obrazkow
+/*for($i=1;$i<=40;$i++)
 {
   echo '<img id="'.$i.'" src="" alt=""/>'; //F. PHP wypisuje na ekranie 40 elementow do zdjec
+}*/
+
+function generuj_zbior($ilosc){
+	$ile=0;
+	$zbior_liczb=array();
+	while($ile<$ilosc){
+			$ile++;
+			$zbior_liczb[]=$ile;
+	}
+	return $zbior_liczb;
 }
+
+function losuj_unikalne($zbior,$ile_wylosowac){
+
+	$wylosowane_liczby=array();
+	for($i=0;$i<$ile_wylosowac;$i++){
+		$wylosowany_index = array_rand($zbior,1);
+		$wylosowane_liczby[]=$zbior[$wylosowany_index];
+		unset($zbior[$wylosowany_index]);
+	}
+	return $wylosowane_liczby;
+}
+
+$zbior = generuj_zbior(40);
+$losowanie = losuj_unikalne($zbior,40);
+
+$los_tmp = 40;
+while($los_tmp>0)
+	{
+		echo '<img id="'.$losowanie[$los_tmp-1].'" src="" alt=""/>'; // 40 losowych zdjec 
+		$los_tmp--;
+	}
  ?>
 </div>
 <script type="text/javascript">

@@ -7,7 +7,7 @@ body {
   position: relative;
 }
 
-#oknogry {
+#oknogry, #final {
 background: black;
 color: white;
 display: block;
