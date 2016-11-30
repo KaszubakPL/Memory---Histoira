@@ -60,35 +60,59 @@ function opisy($id)
                 }
                 if($id == "6")
                   {
-                    return "tu opis 3";
+                    return "<h2>Łyżka</h2>
+                    <p>
+                    Łyżka.
+                    </p>";
                   }
                   if($id == "7")
                     {
-                      return "tu opis 3";
+                      return "<h2>Wnętrze baraku murowanego</h2>
+                      <p>
+                      Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                      </p>";
                     }
                     if($id == "8")
                       {
-                        return "tu opis 3";
+                        return "<h2>Wnętrze baraku murowanego</h2>
+                        <p>
+                        Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                        </p>";
                       }
                       if($id == "9")
                         {
-                          return "tu opis 3";
+                          return "<h2>Wnętrze baraku murowanego</h2>
+                          <p>
+                          Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                          </p>";
                         }
                         if($id == "10")
                           {
-                            return "tu opis 3";
+                            return "<h2>Wnętrze baraku murowanego</h2>
+                            <p>
+                            Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                            </p>";
                           }
                           if($id == "11")
                             {
-                              return "tu opis 3";
+                              return "<h2>Wnętrze baraku murowanego</h2>
+                              <p>
+                              Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                              </p>";
                             }
                             if($id == "12")
                               {
-                                return "tu opis 3";
+                                return "<h2>Wnętrze baraku murowanego</h2>
+                                <p>
+                                Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                                </p>";
                               }
                               if($id == "13")
                                 {
-                                  return "tu opis 3";
+                                  return "<h2>Wnętrze baraku murowanego</h2>
+                                  <p>
+                                  Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                                  </p>";
                                 }
                                 if($id == "14")
                                   {
