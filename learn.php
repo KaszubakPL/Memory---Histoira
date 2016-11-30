@@ -39,25 +39,30 @@ function opisy($id)
                         {
                           return "tu opis 3";
                         }
-                        if($id == "3")
+                        if($id == "10")
                           {
                             return "tu opis 3";
                           }
-                          if($id == "3")
+                          if($id == "11")
                             {
                               return "tu opis 3";
                             }
-                            if($id == "3")
+                            if($id == "12")
                               {
                                 return "tu opis 3";
                               }
-                              if($id == "3")
+                              if($id == "13")
                                 {
                                   return "tu opis 3";
                                 }
-                                if($id == "3")
+                                if($id == "14")
                                   {
-                                    return "tu opis 3";
+                                    return "<h2>Dzieci urodzone w obozie</h2><p>
+                                             Dzieci urodzone w obozie w początkowym okresie istnienia obozu dla kobiet, bez względu na narodowość, były uśmiercane bez odnotowywania tego faktu w dokumentacji obozowej.
+Od połowy 1943 r. pozostawiano przy życiu dzieci urodzone przez kobiety nie-żydowskiego pochodzenia. Po kilku dniach od porodu były rejestrowane i wydawano im numery. Dzieci więźniarek Żydówek były z reguły uśmiercane aż do listopada 1944 r., kiedy to została wstrzymana masowa zagłada Żydów. Jedynie w tzw. obozie rodzinnym dla Żydów z Terezina urodzonych tam dzieci nie zabijano. Nie zachowały się jednak dokumenty informujące o ich liczbie. Wiadomo, że wszystkie zginęły podczas likwidacji tego obozu w lipcu 1944 r.
+Z dostępnych dokumentów można stwierdzić, że w obozie Auschwitz-Birkenau urodziło się co najmniej 700 dzieci (łącznie z obozem rodzinnym dla Cyganów).
+
+                                             </p>";
                                   }
                                   if($id == "3")
                                     {
@@ -148,7 +153,15 @@ function opisy($id)
     }
        echo opisy($id);
     ?>
+	<a class="ponowna_gra" href="./index.php">ZAGRAJ PONOWNIE</a>
  </div>
+	<div id="tab_wynikow"><div id="tab_info">
+		<h2>Twój wynik</h2>
+		<p>Tutaj div z wynikiem - po kliknieciu ok znika (wyswietla sie po wygranej)
+		// pod spodem ew. tablica z wynikami (BD)</p>
+<button id="final_ok_btn">OK</button>
+	</div></div>
 
+	<div id="footer">Autorzy:<br/> Patryk Kaszuba | Bartosz Chowaniak | Łukasz Frączek</div>
  </body>
  </html>

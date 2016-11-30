@@ -153,11 +153,14 @@ $losowanie = losuj_unikalne($zbior,40);
 $los_tmp = 40;
 while($los_tmp>0)
 	{
-		echo '<img id="'.$losowanie[$los_tmp-1].'" src="" alt=""/>'; // 40 losowych zdjec 
+		echo '<img id="'.$losowanie[$los_tmp-1].'" src="" alt=""/>'; // 40 losowych zdjec
 		$los_tmp--;
 	}
  ?>
 </div>
+
+<div id="footer">Autorzy:<br/> Patryk Kaszuba | Bartosz Chowaniak | Łukasz Frączek</div>
+
 <script type="text/javascript">
 //blokada PPM
 // Ukrycie przed przeglÄ…darkami nie obsĹ‚ugujÄ…cymi JavaScriptĂłw
