@@ -15,8 +15,10 @@ $(window).load(function() { // Czekamy na załadowanie całej zawartości strony
 
 
 var hours = 0;
-var min = 10;
+var min = 5;
 var sec=0;
+var wystopienie = false;
+var timeout;
 
 function time() {
   if(sec > 0) {
@@ -30,14 +32,15 @@ function time() {
       sec=59;
   }
 
-  if(hours ==0 && min==0 && sec==0) {
-      alert("End of time....");
+  if((hours ==0 && min==0 && sec==0)&&(wystopienie != true)) {
+      alert("End of time...");
+			wystopienie = true;
   }
 
     document.getElementById('timer').innerHTML=
     hours+":"+((min < 10) ? "0" + min : min)+":"+((sec < 10) ? "0" + sec : sec);
 
-    setTimeout("time();", 1000);
+    timeout = setTimeout("time();", 1000);
 }
   function losuj_bp(ile)
     {
@@ -106,18 +109,20 @@ i++;
 <body>
   <!-- Preloader -->
   <div id="preloader">
-    <div id="image" class="wyniki"></div>
+    <div id="image"></div>
   </div>
   <!-- /Preloader -->
-  <div id="timerDiv" class="wyniki">Czas: <span id="timer">
+  <div id="wyniki_table">
+		<div id="timerDiv" class="wyniki">Czas: <span id="timer">
 
-  </span></div>
-  <div id="punktyDiv" class="wyniki">Punkty: <span id="punkty">
+	  </span></div>
+	  <div id="punktyDiv" class="wyniki">Punkty: <span id="punkty">
 
-  </span></div>
-  <div id="ruchyDiv" class="wyniki">Ruchy: <span id="ruchy">
+	  </span></div>
+	  <div id="ruchyDiv" class="wyniki">Ruchy: <span id="ruchy">
 
-  </span></div>
+	  </span></div>
+	</div>
 
 <div id="oknogry" class="image-holder">
 <?php // wyswietlanie obrazkow
@@ -272,7 +277,8 @@ set_img(40); //ustawienie src na alt losowych obrazkow - 40
                         //stop czasu
                         //wyswietlenie losowego obrazka i opisu do niego
                         //alert(l[5]); // tu wylosowany obrazek z sesji sie wyswietla. zrobic php z tymi obrazkami i opisami
-                        var loc = "learn.php?id="+l[5];
+												clearTimeout(timeout);
+												var loc = "learn.php?id="+l[5]+"&"+"m="+min+"&"+"s="+sec+"&"+"rch="+ruch;
                         location.href = loc;
                       }
   	});
