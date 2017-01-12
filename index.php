@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Memo Auschwitz</title>
+<link href="http://www.auschwitz.org/szablony/auschwitz/favicon.ico" rel="SHORTCUT ICON">
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <!-- <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script> -->
 <script src="jquery-3.1.1.min.js"></script>
