@@ -62,56 +62,56 @@ function opisy($id)
                   {
                     return "<h2>Łyżka</h2>
                     <p>
-                    Łyżka.
+                    Przedmiot znaleziony w obozie.
                     </p>";
                   }
                   if($id == "7")
                     {
-                      return "<h2>Wnętrze baraku murowanego</h2>
+                      return "<h2>Buty</h2>
                       <p>
-                      Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                      Zimowe buty ochronne wartownika SS z drewnianymi podeszwami podbitymi metalowymi stożkowymi kolcami.
                       </p>";
                     }
                     if($id == "8")
                       {
-                        return "<h2>Wnętrze baraku murowanego</h2>
+                        return "<h2>Deportacja Żydów</h2>
                         <p>
-                        Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                        Deportacja Żydów Oświęcimskich w wagonach towarowych.
                         </p>";
                       }
                       if($id == "9")
                         {
-                          return "<h2>Wnętrze baraku murowanego</h2>
+                          return "<h2>Wyburzanie domów</h2>
                           <p>
-                          Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                          Burzenie domów w Oświęcimiu przez więźniów, 1941/42
                           </p>";
                         }
                         if($id == "10")
                           {
-                            return "<h2>Wnętrze baraku murowanego</h2>
+                            return "<h2>Rozbiórka wsi Brzezinka</h2>
                             <p>
-                            Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                            Brzezinka. Po prawej dom Jana i Bronisławy Rydzoń. Fotografia wykonana z ukrycia z budynku papowni podczas rozbiórki przez więźniów obozu Auschwitz zabudowań wsi Brzezinka.
                             </p>";
                           }
                           if($id == "11")
                             {
-                              return "<h2>Wnętrze baraku murowanego</h2>
+                              return "<h2>Ofiary obozu w Dachau</h2>
                               <p>
-                              Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                              Ofiary obozu w Dachau.
                               </p>";
                             }
                             if($id == "12")
                               {
-                                return "<h2>Wnętrze baraku murowanego</h2>
+                                return "<h2>Torby więźniów</h2>
                                 <p>
-                                Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                                Puste torby więźniów przywiezionych do obozu.
                                 </p>";
                               }
                               if($id == "13")
                                 {
-                                  return "<h2>Wnętrze baraku murowanego</h2>
+                                  return "<h2>Wnętrze krematorium</h2>
                                   <p>
-                                  Wnętrze baraku na odcinku BI w KL Auschwitz II-Birkenau.
+                                  Piece jednego z krematoriów w Auschwitz.
                                   </p>";
                                 }
                                 if($id == "14")
@@ -123,70 +123,177 @@ Z dostępnych dokumentów można stwierdzić, że w obozie Auschwitz-Birkenau ur
 
                                              </p>";
                                   }
-                                  if($id == "3")
+                                  if($id == "15")
                                     {
-                                      return "tu opis 3";
+                                      return "<h2>Wnętrze 'kanady'</h2>
+                                      <p>
+                                      Piece jednego z krematoriów w Auschwitz.
+                                      </p>";
                                     }
-                                    if($id == "3")
+                                    if($id == "16")
                                       {
-                                        return "tu opis 3";
+                                        return "<h2>Przed selekcją na rampie w Birkenau</h2>
+                                        <p>
+                                        Żydowskie kobiety i dzieci oczekujące na selekcję na rampie w Birkenau. W tle widoczne baraki odcinka BIa. Niemieckie zdjęcie z 1944 r.
+                                        </p>";
                                       }
-                                      if($id == "3")
+                                      if($id == "17")
                                         {
-                                          return "tu opis 3";
+                                          return "<h2>Rampa 1942r</h2>
+                                          <p>
+                                        Od wiosny 1942 do połowy 1944 r. w miejscu tym zatrzymały się pociągi z ponad 500 tys. deportowanymi przez Niemców do Auschwitz, głównie Żydami a także Polakami, Romami (Cyganami) i innymi.
+                                          </p>";
                                         }
-                                        if($id == "3")
+                                        if($id == "18")
                                           {
-                                            return "tu opis 3";
+                                            return "<h2>Egzekucja Rudolfa Hoessa, 1947 r.</h2>
+                                            <p>
+                                          W tle budynek dawnego obozowego gestapo.
+                                            </p>";
                                           }
-                                          if($id == "3")
+                                          if($id == "19")
                                             {
-                                              return "tu opis 3";
+                                              return "<h2>Dzieci - ofiary eksperymentów</h2>
+                                              <p>
+                                            Dzieci będące przedmiotem eksperymentów dr Jozefa Mengele, wykonane zapewne na jego zlecenie w obozowym studio fotograficznym.
+                                              </p>";
                                             }
-                                            if($id == "3")
+                                            if($id == "20")
                                               {
-                                                return "tu opis 3";
+                                                return "<h2>Rampa i krematoria w Birkenau</h2>
+                                                <p>
+                                              Zdjęcie lotnicze z 25 sierpnia 1944 r. Widoczna zachodnia część rampy wyładowczej w obozie Birkenau, krematoria II i III oraz fragment obozu kobiecego BIb i kilka baraków obozu BII.
+                                                </p>";
                                               }
-                                              if($id == "3")
+                                              if($id == "21")
                                                 {
-                                                  return "tu opis 3";
+                                                  return "<h2>Ruiny komór gazowych</h2>
+                                                  <p>
+                                                Ruiny komór gazowych wysadzonych przez Niemców, uciekających przed Sowietami w styczniu 1945
+                                                  </p>";
                                                 }
-                                                if($id == "3")
+                                                if($id == "22")
                                                   {
-                                                    return "tu opis 3";
+                                                    return "<h2>Dzieci po wyzwoleniu</h2>
+                                                    <p>
+                                                Spośród ponad 230 tys. dzieci deportowanych przez Niemców do Auschwitz wyzwolenia doczekało 700 z nich
+                                                    </p>";
                                                   }
-                                                  if($id == "3")
+                                                  if($id == "23")
                                                     {
-                                                      return "tu opis 3";
+                                                      return "<h2>Spalanie zwłok</h2>
+                                                      <p>
+                                                    Fotografia wykonana nielegalnie przez członków Sonderkommando w 1944 r., przedstawiająca spalanie zwłok ofiar masowej zagłady w KL Auschwitz II-Birkenau.
+                                                      </p>";
                                                     }
-                                                    if($id == "3")
+                                                    if($id == "24")
                                                       {
-                                                        return "tu opis 3";
+                                                        return "<h2>Budowa krematorium III</h2>
+                                                        <p>
+                                                      Prace związane z wylewaniem betonu w budynku komory gazowej i krematorium III. Fotografia wykonana przez SS w 1943 roku.
+                                                        </p>";
                                                       }
-                                                      if($id == "3")
+                                                      if($id == "25")
                                                         {
-                                                          return "tu opis 3";
+                                                          return "<h2>Birkenau - widok z lotu ptaka</h2>
+                                                          <p>
+                                                        KL Auschwitz II-Birkenau. Kadr z „Kroniki wyzwolenia KL Auschwitz” nakręconej w styczniu 1945 roku przez operatorów Armii Czerwonej.
+                                                          </p>";
                                                         }
-                                                        if($id == "3")
+                                                        if($id == "26")
                                                           {
-                                                            return "tu opis 3";
+                                                            return "<h2>Krematorium IV</h2>
+                                                            <p>
+                                                          KL Auschwitz II-Birkenau. Krematorium IV w trakcie budowy. Fotografia wykonana w lutym 1943 roku przez SS.
+                                                            </p>";
                                                           }
-                                                          if($id == "3")
+                                                          if($id == "27")
                                                             {
-                                                              return "tu opis 3";
+                                                              return "<h2>Brama w Birkenau</h2>
+                                                              <p>
+                                                            Tory kolejowe wewnątrz obozu i główna brama zwana „Bramą Śmierci”. Fotografował Stanisław Mucha w lutym/marcu 1945 r.
+                                                              </p>";
                                                             }
-                                                            if($id == "3")
+                                                            if($id == "28")
                                                               {
-                                                                return "tu opis 3";
+                                                                return "<h2>Krematorium II</h2>
+                                                                <p>
+                                                                Widok komory gazowej i krematorium II. Fotografia wykonana przez SS w 1943 roku.
+                                                                </p>";
                                                               }
-                                                              if($id == "3")
+                                                              if($id == "29")
                                                                 {
-                                                                  return "tu opis 3";
+                                                                  return "<h2>Klarnet</h2>
+                                                                  <p>
+                                                                Klarnet, na którym od połowy 1943 r. w orkiestrze obozowej grał więzień Ignacy Stopka, numer obozowy 86261. Wcześniej instrument ten był używany przez więźnia Eugeniusza Dulina z Warszawy, który zmarł w KL Auschwitz.
+                                                                  </p>";
                                                                 }
-                                                                if($id == "3")
+                                                                if($id == "30")
                                                                   {
-                                                                    return "tu opis 3";
+                                                                    return "<h2>Powrót z pracy z cyklu „Dzień więźnia”</h2>
+                                                                    <p>
+                                                                    Autor: Mieczysław Kościelniak  Piórko, tusz czarny, papier, 66 x 82 cm, Polska 1950. Zbiory Państwowego Muzeum Auschwitz-Birkenau.
+                                                                    </p>";
                                                                   }
+                                                                  if($id == "31")
+                                                                    {
+                                                                      return "<h2>Trzewik dziecięcy</h2>
+                                                                      <p>
+                                                                        Trzewik dziecięcy oraz odnaleziona w nim fotografia podczas konserwacji.
+                                                                      </p>";
+                                                                    }
+                                                                    if($id == "32")
+                                                                      {
+                                                                        return "<h2>Krystyna Trześniewska</h2>
+                                                                        <p>
+                                                                      Krystyna Trześniewska (ur. 8 lutego 1929 r. w Majdanie Królewskim, zamordowana 18 maja 1943 r.), przywieziona do KL Auschwitz 13 grudnia 1942 r. z Zamościa; zarejestrowana jako więźniarka polityczna (PPole), numer obozowy 27129. Zdjęcia wykonane przez Wilhelma Brasse'a podczas rejestracji w obozie.
+                                                                        </p>";
+                                                                      }
+                                                                      if($id == "33")
+                                                                        {
+                                                                          return "<h2>Różaniec z chleba</h2>
+                                                                          <p>
+                                                                        Różaniec wykonany w KL Auschwitz z chleba przez więźniarkę Franciszkę Studzińską
+                                                                          </p>";
+                                                                        }
+                                                                        if($id == "34")
+                                                                          {
+                                                                            return "<h2>Walec Krankenmann'a</h2>
+                                                                            <p>
+                                                                              Walec ciągnięty przez karną kompanię.
+                                                                            </p>";
+                                                                          }
+                                                                          if($id == "35")
+                                                                            {
+                                                                              return "<h2>Transport Żydów Węgierskich</h2>
+                                                                              <p>
+                                                                              Na zdjęciu uwidoczniony został transport Żydów węgierskich deportowanych do Auschwitz latem 1944 r., spośród których wielu pochodziło z okupowanej przez Węgry Słowacji i Transylwanii.
+Fotografia wykonana została na zlecenie SS. Pochodzi z tzw. „Albumu Lilli Jacob”. Był to album ze zdjęciami wykonanymi przez esesmanów pod koniec maja 1944 r. Fotografie przedstawiają m.in. przyjazd Żydów do Birkenau, selekcję na rampie, przejście do komór gazowych, pierwsze chwile w obozie osób pozostałych przy życiu, przewóz zrabowanego mienia (grabież) i jego sortowanie. Nazwany tak został od imienia i nazwiska Lili Jacob, ocalałej z Auschwitz słowackiej Żydówki, która odnalazła go po wojnie na terenie obozu koncentracyjnego Mittelbau-Dora.
+                                                                              </p>";
+                                                                            }
+                                                                            if($id == "36")
+                                                                              {
+                                                                                return "<h2>Zapiski Żydowkich członków Sonderkommando</h2>
+                                                                                <p>
+                                                                                Na zdjęciu widoczne są zapiski żydowskich członków Sonderkommando. W latach 1945‑1980 w rejonie krematoriów w Birkenau odnajdywano zakopane w szklanych lub metalowych pojemnikach zapiski członków Sonderkommando, grupy roboczej, złożonej głównie z więźniów żydowskich, których Niemcy zmusili do obsługi komór gazowych, stosów spaleniskowych i krematoriów. Zapiski te mają różnoraki charakter: niektóre posiadają formę listów pożegnalnych, inne zawierają opisy życia w getcie, deportacji do Auschwitz czy pobytu w Sonderkommando, w tym zagłady poszczególnych transportów i palenia zwłok.
+  Obok ważnej, unikatowej wartości źródłowej (np. w manuskrypcie Lewentala znajduje się szczegółowa relacja z przygotowań i przebiegu buntu w październiku 1944 r.) są świadectwem duchowych rozterek i psychicznych obciążeń, jakim poddawani byli więźniowie zatrudnieni w tym komandzie.
+                                                                                </p>";
+                                                                              }
+                                                                              if($id == "37")
+                                                                                {
+                                                                                  return "<h2>Zapiski Żydowkich członków Sonderkommando</h2>
+                                                                                  <p>
+                                                                                  Na zdjęciu widoczne są zapiski żydowskich członków Sonderkommando. W latach 1945‑1980 w rejonie krematoriów w Birkenau odnajdywano zakopane w szklanych lub metalowych pojemnikach zapiski członków Sonderkommando, grupy roboczej, złożonej głównie z więźniów żydowskich, których Niemcy zmusili do obsługi komór gazowych, stosów spaleniskowych i krematoriów. Zapiski te mają różnoraki charakter: niektóre posiadają formę listów pożegnalnych, inne zawierają opisy życia w getcie, deportacji do Auschwitz czy pobytu w Sonderkommando, w tym zagłady poszczególnych transportów i palenia zwłok.
+    Obok ważnej, unikatowej wartości źródłowej (np. w manuskrypcie Lewentala znajduje się szczegółowa relacja z przygotowań i przebiegu buntu w październiku 1944 r.) są świadectwem duchowych rozterek i psychicznych obciążeń, jakim poddawani byli więźniowie zatrudnieni w tym komandzie.
+                                                                                  </p>";
+                                                                                }
+                                                                                if($id == "38")
+                                                                                  {
+                                                                                    return "<h2>Rozbita lalka</h2>
+                                                                                    <p>
+                                                                                  Na zdjęciu widoczna jest rozbita lalka, jedyna zachowana lalka należąca do dziecka przywiezionego do Auschwitz na zagładę.
+                                                                                    </p>";
+                                                                                  }
                                                                   if($id == "undefined")
                                                                     {
                                                                       return "<h2>Młodzież żydowska w Oświęcimiu</h2><p>
@@ -199,6 +306,7 @@ Z dostępnych dokumentów można stwierdzić, że w obozie Auschwitz-Birkenau ur
  <html>
  <head>
  <title>Memo Auschwitz</title>
+ <link href="http://www.auschwitz.org/szablony/auschwitz/favicon.ico" rel="SHORTCUT ICON">
  <link rel="stylesheet" type="text/css" href="style.css"/>
  <script type="text/javascript">
  function tab_wyn_ok()
