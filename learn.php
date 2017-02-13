@@ -249,55 +249,10 @@ Z dostępnych dokumentów można stwierdzić, że w obozie Auschwitz-Birkenau ur
                                                                       Krystyna Trześniewska (ur. 8 lutego 1929 r. w Majdanie Królewskim, zamordowana 18 maja 1943 r.), przywieziona do KL Auschwitz 13 grudnia 1942 r. z Zamościa; zarejestrowana jako więźniarka polityczna (PPole), numer obozowy 27129. Zdjęcia wykonane przez Wilhelma Brasse'a podczas rejestracji w obozie.
                                                                         </p>";
                                                                       }
-                                                                      if($id == "33")
-                                                                        {
-                                                                          return "<h2>Różaniec z chleba</h2>
-                                                                          <p>
-                                                                        Różaniec wykonany w KL Auschwitz z chleba przez więźniarkę Franciszkę Studzińską
-                                                                          </p>";
-                                                                        }
-                                                                        if($id == "34")
-                                                                          {
-                                                                            return "<h2>Walec Krankenmann'a</h2>
-                                                                            <p>
-                                                                              Walec ciągnięty przez karną kompanię.
-                                                                            </p>";
-                                                                          }
-                                                                          if($id == "35")
-                                                                            {
-                                                                              return "<h2>Transport Żydów Węgierskich</h2>
-                                                                              <p>
-                                                                              Na zdjęciu uwidoczniony został transport Żydów węgierskich deportowanych do Auschwitz latem 1944 r., spośród których wielu pochodziło z okupowanej przez Węgry Słowacji i Transylwanii.
-Fotografia wykonana została na zlecenie SS. Pochodzi z tzw. „Albumu Lilli Jacob”. Był to album ze zdjęciami wykonanymi przez esesmanów pod koniec maja 1944 r. Fotografie przedstawiają m.in. przyjazd Żydów do Birkenau, selekcję na rampie, przejście do komór gazowych, pierwsze chwile w obozie osób pozostałych przy życiu, przewóz zrabowanego mienia (grabież) i jego sortowanie. Nazwany tak został od imienia i nazwiska Lili Jacob, ocalałej z Auschwitz słowackiej Żydówki, która odnalazła go po wojnie na terenie obozu koncentracyjnego Mittelbau-Dora.
-                                                                              </p>";
-                                                                            }
-                                                                            if($id == "36")
-                                                                              {
-                                                                                return "<h2>Zapiski Żydowkich członków Sonderkommando</h2>
-                                                                                <p>
-                                                                                Na zdjęciu widoczne są zapiski żydowskich członków Sonderkommando. W latach 1945‑1980 w rejonie krematoriów w Birkenau odnajdywano zakopane w szklanych lub metalowych pojemnikach zapiski członków Sonderkommando, grupy roboczej, złożonej głównie z więźniów żydowskich, których Niemcy zmusili do obsługi komór gazowych, stosów spaleniskowych i krematoriów. Zapiski te mają różnoraki charakter: niektóre posiadają formę listów pożegnalnych, inne zawierają opisy życia w getcie, deportacji do Auschwitz czy pobytu w Sonderkommando, w tym zagłady poszczególnych transportów i palenia zwłok.
-  Obok ważnej, unikatowej wartości źródłowej (np. w manuskrypcie Lewentala znajduje się szczegółowa relacja z przygotowań i przebiegu buntu w październiku 1944 r.) są świadectwem duchowych rozterek i psychicznych obciążeń, jakim poddawani byli więźniowie zatrudnieni w tym komandzie.
-                                                                                </p>";
-                                                                              }
-                                                                              if($id == "37")
-                                                                                {
-                                                                                  return "<h2>Zapiski Żydowkich członków Sonderkommando</h2>
-                                                                                  <p>
-                                                                                  Na zdjęciu widoczne są zapiski żydowskich członków Sonderkommando. W latach 1945‑1980 w rejonie krematoriów w Birkenau odnajdywano zakopane w szklanych lub metalowych pojemnikach zapiski członków Sonderkommando, grupy roboczej, złożonej głównie z więźniów żydowskich, których Niemcy zmusili do obsługi komór gazowych, stosów spaleniskowych i krematoriów. Zapiski te mają różnoraki charakter: niektóre posiadają formę listów pożegnalnych, inne zawierają opisy życia w getcie, deportacji do Auschwitz czy pobytu w Sonderkommando, w tym zagłady poszczególnych transportów i palenia zwłok.
-    Obok ważnej, unikatowej wartości źródłowej (np. w manuskrypcie Lewentala znajduje się szczegółowa relacja z przygotowań i przebiegu buntu w październiku 1944 r.) są świadectwem duchowych rozterek i psychicznych obciążeń, jakim poddawani byli więźniowie zatrudnieni w tym komandzie.
-                                                                                  </p>";
-                                                                                }
-                                                                                if($id == "38")
-                                                                                  {
-                                                                                    return "<h2>Rozbita lalka</h2>
-                                                                                    <p>
-                                                                                  Na zdjęciu widoczna jest rozbita lalka, jedyna zachowana lalka należąca do dziecka przywiezionego do Auschwitz na zagładę.
-                                                                                    </p>";
-                                                                                  }
                                                                   if($id == "undefined")
                                                                     {
-                                                                      return "<h2>Młodzież żydowska w Oświęcimiu</h2><p>
-                                                                        Młodzież żydowska w Oświęcimiu przed wojną
+                                                                      return "<h2>Zegarek</h2><p>
+                                                                        Mopis
                                                                       </p>";
                                                                     }
   }
@@ -308,6 +263,7 @@ Fotografia wykonana została na zlecenie SS. Pochodzi z tzw. „Albumu Lilli Jac
  <title>Memo Auschwitz</title>
  <link href="http://www.auschwitz.org/szablony/auschwitz/favicon.ico" rel="SHORTCUT ICON">
  <link rel="stylesheet" type="text/css" href="style.css"/>
+ <meta charset="utf-8" />
  <script type="text/javascript">
  function tab_wyn_ok()
    {

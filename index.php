@@ -3,6 +3,7 @@
 <title>Memo Auschwitz</title>
 <link href="http://www.auschwitz.org/szablony/auschwitz/favicon.ico" rel="SHORTCUT ICON">
 <link rel="stylesheet" type="text/css" href="style.css"/>
+<meta charset="utf-8" />
 <!-- <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script> -->
 <script src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
@@ -62,6 +63,11 @@ function time() {
           }
     }
 
+	function imagesloadinmemory(i)
+		{
+
+		}
+
   function set_img(how)
     {
       for(i=1;i<=how;i++)
@@ -85,6 +91,7 @@ function time() {
         for(i=1;i<=how;i++)
           {
             document.getElementById(i).src = "test.jpg";
+
           }
       }//view img
 //PRELAODER
@@ -93,6 +100,7 @@ $('img').hide();
 });
 var i = 0;
 var int=0;
+var imagesload = new Array(40); //nowe
 $(window).bind("load", function() {
 var int = setInterval("doThis(i)",250);
 });
@@ -101,7 +109,10 @@ var images = $('img').length;
 if (i >= images) {
 clearInterval(int);
 }
+imagesload[i] = new Image(); //ladowanie obrazkow do pamieci zeby nie czekac
+imagesload[i] = t_src[i];//to i u gory nowe
 $('img:hidden').eq(0).fadeIn(250);
+
 i++;
 }
 //END PRELAODER
@@ -200,7 +211,7 @@ var t_src = new Array(); // Tworzenie tablicy niewymiarowej
 create_table(38); //stworzenie tablic [20] ktore beda mialy sciezki do plikow
 //Losowanie
 var l = new Array(); // stworzenie tablicy pomocniczej do losowania
-losuj_bp(38); // losowanie 30 liczb
+losuj_bp(32); // losowanie 30 liczb
 view_img(40);//wyswietanie hoverow
 set_img(40); //ustawienie src na alt losowych obrazkow - 40
 
