@@ -3,6 +3,13 @@ $id = $_GET['id'];
 
 function opisy($id)
   {
+    if($id=="0")
+      {
+        return "<h2>Krematorium II</h2>
+        <p>
+        Widok komory gazowej i krematorium II. Fotografia wykonana przez SS w 1943 roku.
+        </p>";
+        }
       if($id=="1")
         {
           return "<h2>Brama główna KL Auschwitz</h2>
@@ -14,12 +21,6 @@ function opisy($id)
           parafrazą hasła biblijnego: Arbeit macht frei. Hasło to stało się popularne w kręgach nacjonalistycznych.
           W latach trzydziestych XX wieku było używane przez propagandę nazistowską w Niemczech w programach
           zwalczania bezrobocia.
-          Na rozkaz generała SS Theodora Eicke wykorzystane przy bramach wejściowych do kilku niemieckich
-          obozów koncentracyjnych (Auschwitz, Dachau, Gross-Rosen, Sachsenhausen, Theresienstadt, Flossenbürg),
-          będących również obozami wyniszczającej, niewolniczej pracy. Więźniowie codziennie widzieli ten napis
-          wychodząc rano do pracy w komandach i wracając wieczorem do obozu. W niektórych obozach zamieszczono
-          inne hasła. Przykładowo, w KL Buchenwaldzie na bramie znajdowało się hasło: Jedem das seine, co
-          przetłumaczyć można jako Każdemu, co mu się należy.
           </p>";
           }
         if($id == "2")
@@ -30,8 +31,6 @@ function opisy($id)
             w którym udziały miały koncerny Degussa, IG Farben i Th. Goldschmidt AG. Była to granulowana ziemia
             okrzemkowa nasycona cyjanowodorem (HCN), która uwalniała ten silnie trujący związek chemiczny po wyjęciu ze
              szczelnych pojemników.
-             Produkowano także ciekły cyklon A, w którym cyjanowodór był uwalniany w wyniku
-             reakcji chemicznej cyjanomrówczanu metylu z wodą.
             </p>";
           }
           if($id == "3")
@@ -81,30 +80,30 @@ function opisy($id)
                       }
                       if($id == "9")
                         {
-                          return "<h2>Wyburzanie domów</h2>
+                          return "<h2>Różaniec z chleba</h2>
                           <p>
-                          Burzenie domów w Oświęcimiu przez więźniów, 1941/42
+                        Na zdjęciu widoczny jest różaniec wykonany z chleba przez więźniarkę Franciszkę Studzińską (nr obozowy 26293). Studzińska urodziła się 9 marca 1917 r. w Krakowie. Była uczennicą krakowskiej Szkoły Muzycznej im. Władysława Żeleńskiego w klasie fortepianu, a po 1939 r. zaangażowała się w działalność konspiracyjną Związku Odbudowy Rzeczypospolitej, który wszedł następnie w skład Armii Krajowej. Pełniła funkcje łączniczki i zajmowała się m.in. kolportażem prasy podziemnej. Została aresztowana przez gestapo wraz z mężem i wywieziona do obozu koncentracyjnego KL Auschwitz, gdzie zginęła 4 kwietnia 1943 r.
                           </p>";
                         }
                         if($id == "10")
                           {
-                            return "<h2>Rozbiórka wsi Brzezinka</h2>
+                            return "<h2>Rozbita lalka</h2>
                             <p>
-                            Brzezinka. Po prawej dom Jana i Bronisławy Rydzoń. Fotografia wykonana z ukrycia z budynku papowni podczas rozbiórki przez więźniów obozu Auschwitz zabudowań wsi Brzezinka.
-                            </p>";
+                            Na zdjęciu widoczna jest rozbita lalka, jedyna zachowana lalka należąca do dziecka przywiezionego do Auschwitz na zagładę.
+                                              </p>";
                           }
                           if($id == "11")
                             {
-                              return "<h2>Ofiary obozu w Dachau</h2>
+                              return "<h2>Zapiski Żydowkich członków Sonderkommando</h2>
                               <p>
-                              Ofiary obozu w Dachau.
-                              </p>";
+                              Na zdjęciu widoczne są zapiski żydowskich członków Sonderkommando. W latach 1945‑1980 w rejonie krematoriów w Birkenau odnajdywano zakopane w szklanych lub metalowych pojemnikach zapiski członków Sonderkommando, grupy roboczej, złożonej głównie z więźniów żydowskich, których Niemcy zmusili do obsługi komór gazowych, stosów spaleniskowych i krematoriów. Zapiski te mają różnoraki charakter: niektóre posiadają formę listów pożegnalnych, inne zawierają opisy życia w getcie, deportacji do Auschwitz czy pobytu w Sonderkommando, w tym zagłady poszczególnych transportów i palenia zwłok.
+Obok ważnej, unikatowej wartości źródłowej (np. w manuskrypcie Lewentala znajduje się szczegółowa relacja z przygotowań i przebiegu buntu w październiku 1944 r.) są świadectwem duchowych rozterek i psychicznych obciążeń, jakim poddawani byli więźniowie zatrudnieni w tym komandzie. </p>";
                             }
                             if($id == "12")
                               {
-                                return "<h2>Torby więźniów</h2>
+                                return "<h2>Walizki więźniów</h2>
                                 <p>
-                                Puste torby więźniów przywiezionych do obozu.
+                                Puste walizki więźniów przywiezionych do obozu.
                                 </p>";
                               }
                               if($id == "13")
@@ -146,9 +145,10 @@ Z dostępnych dokumentów można stwierdzić, że w obozie Auschwitz-Birkenau ur
                                         }
                                         if($id == "18")
                                           {
-                                            return "<h2>Egzekucja Rudolfa Hoessa, 1947 r.</h2>
+                                            return "<h2>Zapiski Żydowkich członków Sonderkommando</h2>
                                             <p>
-                                          W tle budynek dawnego obozowego gestapo.
+                                            Na zdjęciu widoczne są zapiski żydowskich członków Sonderkommando. W latach 1945‑1980 w rejonie krematoriów w Birkenau odnajdywano zakopane w szklanych lub metalowych pojemnikach zapiski członków Sonderkommando, grupy roboczej, złożonej głównie z więźniów żydowskich, których Niemcy zmusili do obsługi komór gazowych, stosów spaleniskowych i krematoriów. Zapiski te mają różnoraki charakter: niektóre posiadają formę listów pożegnalnych, inne zawierają opisy życia w getcie, deportacji do Auschwitz czy pobytu w Sonderkommando, w tym zagłady poszczególnych transportów i palenia zwłok.
+  Obok ważnej, unikatowej wartości źródłowej (np. w manuskrypcie Lewentala znajduje się szczegółowa relacja z przygotowań i przebiegu buntu w październiku 1944 r.) są świadectwem duchowych rozterek i psychicznych obciążeń, jakim poddawani byli więźniowie zatrudnieni w tym komandzie.
                                             </p>";
                                           }
                                           if($id == "19")
@@ -169,7 +169,7 @@ Z dostępnych dokumentów można stwierdzić, że w obozie Auschwitz-Birkenau ur
                                                 {
                                                   return "<h2>Ruiny komór gazowych</h2>
                                                   <p>
-                                                Ruiny komór gazowych wysadzonych przez Niemców, uciekających przed Sowietami w styczniu 1945
+                                                Ruiny komór gazowych wysadzonych przez Niemców, uciekających przed Armią Czerwoną w styczniu 1945
                                                   </p>";
                                                 }
                                                 if($id == "22")
@@ -188,9 +188,11 @@ Z dostępnych dokumentów można stwierdzić, że w obozie Auschwitz-Birkenau ur
                                                     }
                                                     if($id == "24")
                                                       {
-                                                        return "<h2>Budowa krematorium III</h2>
+                                                        return "<h2>Transport Żydów Węgierskich</h2>
                                                         <p>
-                                                      Prace związane z wylewaniem betonu w budynku komory gazowej i krematorium III. Fotografia wykonana przez SS w 1943 roku.
+                                                        a zdjęciu uwidoczniony został transport Żydów węgierskich deportowanych do Auschwitz latem 1944 r., spośród których wielu pochodziło z okupowanej przez Węgry Słowacji i Transylwanii.
+   Fotografia wykonana została na zlecenie SS. Pochodzi z tzw. „Albumu Lilli Jacob”. Był to album ze zdjęciami wykonanymi przez esesmanów pod koniec maja 1944 r. Fotografie przedstawiają m.in. przyjazd Żydów do Birkenau, selekcję na rampie, przejście do komór gazowych, pierwsze chwile w obozie osób pozostałych przy życiu, przewóz zrabowanego mienia (grabież) i jego sortowanie. Nazwany tak został od imienia i nazwiska Lili Jacob, ocalałej z Auschwitz słowackiej Żydówki, która odnalazła go po wojnie na terenie obozu koncentracyjnego Mittelbau-Dora.
+
                                                         </p>";
                                                       }
                                                       if($id == "25")
@@ -216,9 +218,13 @@ Z dostępnych dokumentów można stwierdzić, że w obozie Auschwitz-Birkenau ur
                                                             }
                                                             if($id == "28")
                                                               {
-                                                                return "<h2>Krematorium II</h2>
+                                                                return "<h2>Walec Krankemanna</h2>
                                                                 <p>
-                                                                Widok komory gazowej i krematorium II. Fotografia wykonana przez SS w 1943 roku.
+                                                                Walec ciągnięty przez karną kompanię.
+                                                                Walec Krankemanna – metalowy walec wykorzystywany do utwardzania nawierzchni placu apelowego i dróg obozowych. Walec jednocześnie
+ciągnęli i pchali więźniowie ze Strafkompanie [niem. karna kompania]. Ze względu na ciężką pracę, wiele przypadków śmiertelnych
+i sadystyczne zachowanie kapo, walec Krankemanna został przez więźniów zapamiętany przede wszystkim jako środek zadawania cierpień
+i śmierci, a nie narzędzie pracy.
                                                                 </p>";
                                                               }
                                                               if($id == "29")
@@ -252,7 +258,7 @@ Z dostępnych dokumentów można stwierdzić, że w obozie Auschwitz-Birkenau ur
                                                                   if($id == "undefined")
                                                                     {
                                                                       return "<h2>Zegarek</h2><p>
-                                                                        Mopis
+                                                                        Motywem przewodnim 72. rocznicy jest czas. Symbolizuje go zegarek odnaleziony podczas prac archeologicznych prowadzonych 50 lat temu w okolicy komory gazowej i krematorium III. Należał do ofiary Holocaustu. – Czas nieuchronnie oddala nas od dziejów Auschwitz. Pamięć jest zawsze walką z czasem. Czas jednocześnie jest tym, czego zdarza się nam brakować w naszej misji uświadamiania kolejnych pokoleń przed niebezpieczeństwem populizmu, ksenofobii, antysemityzmu, rozmaitych egotyzmów narodowych – uważa dyrektor muzeum Piotr Cywiński.
                                                                       </p>";
                                                                     }
   }

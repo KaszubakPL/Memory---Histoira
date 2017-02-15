@@ -7,6 +7,7 @@ font-family: typewriter;
 
 body {
   position: relative;
+  height: 98%;
 }
 
 #wyniki_table {
@@ -186,6 +187,7 @@ z-index: 100;
 
 #footer {
 position: absolute;
+clear: both;
 bottom: 0;
 width: 100%;
 min-height: 50px;
