@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Memo Auschwitz</title>
+<title>Memory of Auschwitz</title>
 <link href="http://www.auschwitz.org/szablony/auschwitz/favicon.ico" rel="SHORTCUT ICON">
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <meta charset="utf-8" />
