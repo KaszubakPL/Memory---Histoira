@@ -6,12 +6,11 @@
 <meta charset="utf-8" />
 <!-- <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script> -->
 <script src="jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 <script type="text/javascript">
 //PRELAODER do calej strony
-$(window).load(function() { // Czekamy na załadowanie całej zawartości strony
-				$("#preloader #image").delay(10000).fadeOut(); // Usuwamy grafikę ładowania
-				$("#preloader").delay(10000).fadeOut("slow"); // Usuwamy diva przysłaniającego stronę
+$(window).on("load",function() { // Czekamy na załadowanie całej zawartości strony
+				$("#preloader #image").fadeOut(); // Usuwamy grafikę ładowania
+				$("#preloader").delay(350).fadeOut("slow"); // Usuwamy diva przysłaniającego stronę
 			})
 //end
 

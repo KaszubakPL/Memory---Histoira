@@ -308,7 +308,7 @@ i śmierci, a nie narzędzie pracy.
 <button id="final_ok_btn">OK</button>
 	</div></div>
 
-	<div id="footer">Autorzy:<br/> Patryk Kaszuba | Bartosz Chowaniak | Łukasz Frączek</div>
+	<div id="footer" style="position:fixed;">Autorzy:<br/> Patryk Kaszuba | Bartosz Chowaniak | Łukasz Frączek</div>
   <script type="text/javascript">
     document.getElementById('final_ok_btn').onclick = tab_wyn_ok;
     <?php
