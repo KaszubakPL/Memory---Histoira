@@ -153,9 +153,10 @@ Z dostępnych dokumentów można stwierdzić, że w obozie Auschwitz-Birkenau ur
                                           }
                                           if($id == "19")
                                             {
-                                              return "<h2>Dzieci - ofiary eksperymentów</h2>
+                                              return "<h2>Maksymilian Maria Kolbe</h2>
                                               <p>
-                                            Dzieci będące przedmiotem eksperymentów dr Jozefa Mengele, wykonane zapewne na jego zlecenie w obozowym studio fotograficznym.
+                                            Maksymilian Maria Kolbe (właściwie Rajmund Kolbe urodzony 8 stycznia 1894 w Zduńskiej Woli, zmarł 14 sierpnia 1941 w KL Auschwitz) – polski franciszkanin
+                                            konwentualny, prezbiter, męczennik, misjonarz i święty Kościoła katolickiego. Pierwszy polski męczennik okresu II wojny światowej wyniesiony na ołtarze podczas beatyfikacji w 1971.
                                               </p>";
                                             }
                                             if($id == "20")
