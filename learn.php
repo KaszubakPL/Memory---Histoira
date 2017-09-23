@@ -157,6 +157,7 @@ Z dostępnych dokumentów można stwierdzić, że w obozie Auschwitz-Birkenau ur
                                               <p>
                                             Maksymilian Maria Kolbe (właściwie Rajmund Kolbe urodzony 8 stycznia 1894 w Zduńskiej Woli, zmarł 14 sierpnia 1941 w KL Auschwitz) – polski franciszkanin
                                             konwentualny, prezbiter, męczennik, misjonarz i święty Kościoła katolickiego. Pierwszy polski męczennik okresu II wojny światowej wyniesiony na ołtarze podczas beatyfikacji w 1971.
+                                            Więzień KL Auschwitz, oddał życie na selekcji za Franciszka Gajowniczka.
                                               </p>";
                                             }
                                             if($id == "20")
